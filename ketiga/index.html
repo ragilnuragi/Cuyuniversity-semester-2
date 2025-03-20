@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>Web Pertama</title>
+  </head>
+  <body>
+    <header class="animate__animated animate__backInDown animate__faster">
+      <div class="logo animate__animated animate__pulse animate__infinite">
+        <img src="assets/icons/partner.png" alt="logo" class="logo-img" />
+        <h1 class="logo-title">Ragil N</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#jasa">JASA</a></li>
+          <li><a href="mailto:ragilnurfadillah492@gmail.com">KONTAK</a></li>
+        </ul>
+      </nav>
+      <button class="btn-cta" onclick="redirInstagram()">Follow saya</button>
+    </header>
+    <div class="container">
+      <div class="intro">
+        <p class="title animate__animated animate__backInLeft">Hello, Ragil Nurfadillah Here!</p>
+        <p class="description animate__animated animate__backInRight">Junior Programming</p>
+        <img class="img-foto animate__animated animate__slideInDown" src="assets/foto/51420035.jpg" alt="ragil nurfadillah" />
+      </div>
+    </div>
+    <div class="parallax">
+      <div class="tentang animate__animated animate__jackInTheBox">
+        <p class="title">Saya adalah Junior Programming</p>
+        <p class="description">Menjadi biasa lebih baik daripada menjadi perusak</p>
+        <div class="mt-10">
+          <button class="btn-cta" onclick="redirWhatsapp()">Mari Kita Mulai!</button>
+        </div>
+      </div>
+      <div class="container">
+        <div class="card" id="jasa">
+          <div class="card-item animate__animated animate__slideInDown">
+            <img class="icon" src="assets/icons/24-hours.png" alt="icon1" />
+            <p class="card-title">Saya suka menyendiri</p>
+            <p class="card-description">cara kabur dari kenyataan sesaat</p>
+          </div>
+          <div class="card-item animate__animated animate__slideInUp">
+            <img class="icon" src="assets/icons/hot-deal.png" alt="icon2" />
+            <p class="card-title">Saya belum kerja</p>
+            <p class="card-description">Aku butuh kerja. P Loker?</p>
+          </div>
+          <div class="card-item animate__animated animate__slideInDown">
+            <img class="icon" src="assets/icons/rating.png" alt="icon3" />
+            <p class="card-title">100 Rating</p>
+            <p class="card-description">Sangat puas</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="animate__animated animate__slideInUp">
+      <p class="title">&copy; Ragil Nurfadillah Website 2025</p>
+    </footer>
+
+    <script>
+      function redirInstagram() {
+        window.location.href = "https://www.instagram.com/ragilnurfadillah/";
+      }
+      function redirWhatsapp() {
+        window.location.href = "https://wa.me/+6281909545478";
+      }
+    </script>
+  </body>
+</html>
