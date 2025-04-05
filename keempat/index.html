@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    *,
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+    .parallax {
+      background-position: center;
+      background-size: cover;
+      background-attachment: fixed;
+      width: 100%;
+      height: 100vh;
+    }
+    .intro {
+      background-image: url("1.jpg");
+    }
+    .content {
+      background-image: url("4.jpg");
+    }
+    .footer {
+      background-image: url("3.jpg");
+    }
+    .cta {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .card {
+      justify-content: center;
+      align-items: center;
+    }
+    .title {
+      color: aliceblue;
+      font-size: 4em;
+      font-family: fantasy;
+      font-style: italic;
+      letter-spacing: 10px;
+    }
+    .btn {
+      background-color: #4caf50;
+      width: 100%;
+      text-align: center;
+      justify-content: center;
+      color: white;
+      font-size: 2em;
+      padding: 5px;
+      margin-top: 12px;
+    }
+  </style>
+  <body>
+    <div class="parallax intro" id="1">
+      <div class="cta">
+        <div class="card">
+          <h2 class="title">This Is My Website</h2>
+          <a href="#2"><button class="btn">Tekan Saja</button></a>
+        </div>
+      </div>
+    </div>
+    <div class="parallax content" id="2">
+      <div class="cta">
+        <div class="card">
+          <h2 class="title">My Name is Ragil</h2>
+          <a href="#1"><button class="btn">Balik Lagi</button></a>
+          <a href="#3"><button class="btn">Lanjut</button></a>
+        </div>
+      </div>
+    </div>
+    <div class="parallax footer" id="3">
+      <div class="cta">
+        <div class="card">
+          <h2 class="title">I'm Web Programmer</h2>
+          <a href="#2"><button class="btn">Balik Lagi</button></a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
