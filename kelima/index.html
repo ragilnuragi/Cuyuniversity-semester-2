@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Trailer Roblox</title>
+  </head>
+  <style>
+    *,
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    #trailer {
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      min-width: 100%;
+      min-height: 100%;
+    }
+    .intro {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      padding: 20px;
+      font-size: 20px;
+      font-family: fantasy;
+    }
+    #btn {
+      border: none;
+      padding: 12px;
+      color: white;
+      background-color: black;
+      font-weight: 800;
+      margin-top: 20px;
+      width: 200px;
+      cursor: pointer;
+    }
+  </style>
+  <body>
+    <video autoplay muted loop id="trailer">
+      <source src="assets/game_trailer.mp4" type="video/mp4" />
+    </video>
+    <div class="intro">
+      <center>
+        <img src="assets/roblox-logo.png" alt="roblox" width="150" height="150" />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat incidunt reprehenderit ea? Aliquid facere pariatur maiores distinctio natus eveniet,
+          sequi laborum. Perspiciatis deleniti quam cum aliquam necessitatibus quo ipsam temporibus.
+        </p>
+        <button id="btn" onclick="trigerBtn()">PAUSE</button>
+      </center>
+    </div>
+    <script>
+      const trailer = document.getElementById("trailer");
+      const btn = document.getElementById("btn");
+      function trigerBtn() {
+        if (trailer.paused) {
+          trailer.play();
+          btn.innerHTML = "PAUSE";
+        } else {
+          trailer.pause();
+          btn.innerHTML = "PLAY";
+        }
+      }
+    </script>
+  </body>
+</html>
